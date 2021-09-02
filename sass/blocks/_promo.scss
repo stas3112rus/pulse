@@ -53,3 +53,27 @@
         }
     }
 }
+@media(max-width: 991px){
+    .promo{
+        &__header{
+            font-size: 30px;
+        }
+        &__subheader{
+            font-size: 18px;
+        }
+    }
+}
+@media(max-width: 510px){
+    .promo{
+        &__wrapper{
+            align-items: center;
+        }
+        &__icons{
+            flex-direction: column;
+            align-items: center;            
+        }        
+        &__icon{
+            margin-bottom: 20px;
+        }
+    }
+}

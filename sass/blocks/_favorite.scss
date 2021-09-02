@@ -40,3 +40,11 @@
     }
 
 }
+@media(max-width: 510px){
+    .favorite{
+        &__icons{
+            flex-direction: column;
+            padding: 0px 10px 0px 10px;
+        }
+    }
+}

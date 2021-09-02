@@ -23,3 +23,12 @@
         line-height: 25px;
     }
 }
+@media(max-width: 510px){
+    .button{
+        &_header{
+            width: 153px;
+            height: 32px;
+            font-size: 12px; 
+        }
+    }
+}

@@ -44,3 +44,21 @@
     }
    
 }
+@media(max-width: 510px){
+    .header{
+            &__offical{
+                display: none;
+            }
+            &__phone{
+                font-size: 15px;
+            }
+            &__logo{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+       
+        }
+
+}
