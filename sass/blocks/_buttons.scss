@@ -37,3 +37,11 @@
         }
     }
 }
+@media(max-width: 400px){
+    .button{
+        &_consultation{
+            width: 85%;
+        }
+    }
+
+}

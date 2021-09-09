@@ -5,7 +5,7 @@
     width: 300px;
     input{
         
-        width: 303px;
+        width: 100%;
         height: 54px;
         font-size: 14px;
         left: 0px;
@@ -21,4 +21,10 @@
         }
             
     }
+}
+@media(max-width: 400px){
+    .feed-form{
+        width: 85%;
+    }
+
 }

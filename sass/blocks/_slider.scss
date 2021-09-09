@@ -1,0 +1,27 @@
+.slider{
+   padding: 81px 0px 81px 0px;
+   min-height: 647px;
+   &__inner{
+       width: 750px;
+       margin: 0 auto;
+       position: relative;
+   } 
+   .slick-prev, .slick-next{
+    border: 0;
+    background-color: white;
+    display: block;
+    width: 31px;
+    height: 50px;
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    
+    .slick-next{
+        right: -75px;      
+    }
+    .slick-prev{
+        left: -75px;
+    }
+}
