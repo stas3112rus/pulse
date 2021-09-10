@@ -5,6 +5,9 @@
        width: 750px;
        margin: 0 auto;
        position: relative;
+       img{
+           width: 100%;
+       }
    } 
    .slick-prev, .slick-next{
     border: 0;
@@ -24,4 +27,34 @@
     .slick-prev{
         left: -75px;
     }
+}
+@media(max-width: 768px){
+    .slider{
+        &__inner{
+            width: 560px; 
+        }
+    }
+
+}
+
+@media(max-width: 590px){
+    .slider{
+        &__inner{
+            width: 350px; 
+        }
+    }
+
+}
+.slick-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button{
+        background-color: white;
+        border: none;
+        color: white;
+    }
+
+    
+    
 }
