@@ -16,7 +16,7 @@
     width: 31px;
     height: 50px;
     position: absolute;
-    
+    // коментарий
     top: 50%;
     transform: translateY(-50%);
     }
@@ -49,6 +49,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    .slick-active{
+        color: red;
+    }
     button{
         background-color: white;
         border: none;
