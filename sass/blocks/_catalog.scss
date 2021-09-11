@@ -179,3 +179,34 @@
        
     }
 }
+
+@media (max-width: 950px){
+    .catalog{
+        &__content{
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .catalog{
+        &__tab{
+            width: 150px;
+            font-size: 14px;
+           
+        }
+    }
+}
+
+@media(max-width:640px){
+    .catalog{
+        &__tabs{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+        &__tab{
+            margin-bottom: 20px;
+        }
+    }
+}
