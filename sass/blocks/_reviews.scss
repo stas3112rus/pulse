@@ -40,3 +40,30 @@
          
     }
 }
+@media(max-width: 960px){
+    .reviews{
+        &__item{
+            display: flex;
+            flex-direction: column;
+        }
+        &__picture{
+            margin: 0 auto;
+        }
+        &__text{
+            margin-top: 20px;
+        }
+        &__comment{
+            text-align: center;
+        }
+        &__text-review{
+            margin-top: 15px;
+        }
+    }
+}
+@media(max-width: 960px){
+    .reviews{
+        &__text{
+            width: 98%;
+        }
+    }
+}
