@@ -32,7 +32,7 @@
                     </a>
                    
                                
-                   <button class="button button_header">
+                   <button data-modal="consultating" class="button button_header">
                         заказать звонок
                    </button>
                   
@@ -55,7 +55,7 @@
                         Ответим <br>на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">заказать КОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultating" class="button button_main">заказать КОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -141,7 +141,7 @@
                     <div class="catalog__wraper">
                         <div class="catalog__inner-content catalog__inner-content_active">
                             <img src="img/05-catalog/photo.jpg" alt="Product" class="catalog__img">
-                            <div class="catalog__product-title">Пульсометр Suunto M2</div>
+                            <div class="catalog__product-title">Пульсометр ferro M2</div>
                             <div class="catalog__product-text">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
                             </div>
@@ -489,6 +489,39 @@
              </div>
          </div>     
     </section>
+    <div class="overlay">
+        <div class="modal " id="consultating">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" method="POST" class="feed-form feed-form_modal">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+               
+                <button class="button button_consultation">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>  
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ</div>
+            <div class="modal__desc">Пульсометр Polar FT1</div>
+            <form action="#" method="POST" class="feed-form feed-form_modal">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+               
+                <button class="button button_consultation">Купить</button>
+            </form>  
+        </div>
+        <div class="modal modal_mini" id="thank-you">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку</div>
+            <div class="modal__desc">Наш менеджер свяжется с вами в ближайшее врямя</div>
+        </div>
+
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>  

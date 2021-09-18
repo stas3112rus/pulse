@@ -50,6 +50,26 @@ $(document).ready(function(){
      ToggleSlide('.catalog__link');
      ToggleSlide('.catalog__link-back');
      // END Turn content and list
+
+     //Modal windows
+
+     $('[data-modal=consultating]').on('click', function(){
+       $('.overlay, #consultating').fadeIn();
+     });
+
+     $('.modal__close').on('click', function(){
+      $('.overlay, #consultating, #order, thank-you').fadeOut();
+     });
+
+     $('.button__catalog').each(function(i){
+      $(this).on('click', function(){
+        $('#order .modal__desc').text($('.catalog__product-title').eq(i).text());
+        $('.overlay, #order').fadeIn();
+      });
+     });
+
+      //END Modal windows
+
   });
 
  

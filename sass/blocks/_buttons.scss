@@ -41,10 +41,20 @@
         }
     }
 }
-@media(max-width: 400px){
+@media(max-width: 480px){
     .button{
         &_consultation{
             width: 85%;
+            font-size: 13px;
+        }
+    }
+
+}
+@media(max-width: 335px){
+    .button{
+        &_consultation{
+            
+            font-size: 11px;
         }
     }
 
