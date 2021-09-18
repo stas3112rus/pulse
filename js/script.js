@@ -69,7 +69,38 @@ $(document).ready(function(){
      });
 
       //END Modal windows
+     
+      // Validation Forms
 
+    
+      function validateForms(forms){
+        $(forms).validate({
+          rules: {
+            name: "required",
+            phone: "required",
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: "Введите ваше имя",
+            phone: "Введите ваше номер телефон",
+            email: {
+              required: "Введите ваш E-mail",
+              email: "Неправильно введен адрес почты"
+            }
+          },
+          errorClass: "invalid"
+  
+  
+        });
+      }
+      validateForms ('.consultation  form');
+      validateForms ('#consultating form');
+      validateForms ('#order form');      
+
+      //End validation Forms
   });
 
  

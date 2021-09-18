@@ -21,8 +21,16 @@
         }
         &_modal{
             margin-top: 20px;
-        }
-            
+        }            
+    }
+    .invalid{
+        border: 3px solid red;
+        color: white;
+        margin-bottom: 15px;
+    }
+    label.invalid{
+        border: none;
+        text-align: center;
     }
 }
 
