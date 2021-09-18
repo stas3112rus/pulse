@@ -71,6 +71,7 @@ $(document).ready(function(){
       //END Modal windows
      
       // Validation Forms
+      // Documantation jqueryvalidation.org
 
     
       function validateForms(forms){
