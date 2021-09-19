@@ -86,7 +86,7 @@ $(document).ready(function(){
           },
           messages: {
             name: "Введите ваше имя",
-            phone: "Введите ваше номер телефон",
+            phone: "Введите ваше номер телефона",
             email: {
               required: "Введите ваш E-mail",
               email: "Неправильно введен адрес почты"
@@ -102,6 +102,16 @@ $(document).ready(function(){
       validateForms ('#order form');      
 
       //End validation Forms
+
+
+      // Mask phone
+      // Documantation https://github.com/digitalBush/jquery.maskedinput
+     
+       
+        $(".phone").mask("+7 (999) 999 - 99 - 99");
+       
+    
+      // ENd mask phone
   });
 
  
