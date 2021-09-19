@@ -112,6 +112,26 @@ $(document).ready(function(){
        
     
       // ENd mask phone
+
+
+      // SEnd message with php-srcipt
+      $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultating, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+      // END SEnd message with php-srcopt
+
   });
 
  
