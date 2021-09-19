@@ -132,6 +132,22 @@ $(document).ready(function(){
     });
       // END SEnd message with php-srcopt
 
+
+      //Icon Up
+      $(window).scroll(function(){
+        if ($(this).scrollTop()>900){
+          $('.page-up').fadeIn();
+        }else{
+          $('.page-up').fadeOut();
+        }
+      });
+
+      $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+      });
+      // end Icon up
   });
 
  
